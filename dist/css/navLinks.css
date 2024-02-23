@@ -1,0 +1,43 @@
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: white;
+}
+.links .logoutBtn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 500;
+  border: none;
+}
+
+.navLink {
+  background-color: red;
+  min-width: 100px;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  text-align: center;
+}
+.navLink .active {
+  background-color: white;
+  color: #161616;
+}
+
+.mobileLinks {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #2f2f2f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}/*# sourceMappingURL=navLinks.css.map */

@@ -1,0 +1,11 @@
+.navbar {
+  display: flex;
+  height: 4rem;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .hero-logo {
+  font-size: 30px;
+  font-weight: bold;
+}/*# sourceMappingURL=navbar.css.map */

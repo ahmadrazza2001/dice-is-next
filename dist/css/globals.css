@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  transition: 0.3s ease;
+  background-color: #000;
+  color: white;
+}
+body .main-content {
+  width: 60%;
+  margin: auto;
+  padding: 0.5rem 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}/*# sourceMappingURL=globals.css.map */

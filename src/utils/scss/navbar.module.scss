@@ -1,0 +1,14 @@
+@import "./theme/theme.scss";
+
+.navbar{
+    display: flex;
+    height: 4rem;
+    color: $text-white;
+    // background-color: $secondary-color;
+    justify-content: space-between;
+    align-items: center;
+    .hero-logo{
+        font-size: $heading-size;
+        font-weight: bold;
+    }
+}
