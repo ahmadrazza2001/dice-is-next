@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+.container .imageContainer {
+  position: relative;
+  height: 500px;
+  flex: 1;
+}
+.container .imageContainer .image {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container .formContainer {
+  flex: 1;
+}
+.container .formContainer .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .formContainer .form input {
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgba(22, 28, 89, 0.5098039216);
+}
+.container .formContainer .form input::-moz-placeholder {
+  color: rgba(242, 242, 242, 0.8784313725);
+}
+.container .formContainer .form input::placeholder {
+  color: rgba(242, 242, 242, 0.8784313725);
+}
+.container .formContainer .form textarea {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgba(22, 28, 89, 0.5098039216);
+}
+.container .formContainer .form textarea::-moz-placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(242, 242, 242, 0.8784313725);
+}
+.container .formContainer .form textarea::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(242, 242, 242, 0.8784313725);
+}
+.container .formContainer .form button {
+  padding: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #0b1696;
+}/*# sourceMappingURL=contact.module.css.map */

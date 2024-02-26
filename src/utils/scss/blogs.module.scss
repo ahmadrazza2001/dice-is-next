@@ -1,0 +1,47 @@
+@import "./theme/theme.scss";
+
+.container{
+    // margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    .post{
+        width: 30%;
+        @include breakpoint(xl){
+            width: 25%;
+        }
+        @include breakpoint(lg){
+            width: 30%;
+        }
+        @include breakpoint(md){
+            // margin-top: 5%;
+
+            width: 40%;
+        }
+        @include breakpoint(xs){
+            margin-top: 5%;
+            width: 95%;
+        }
+    }
+    @include breakpoint(xs){
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    @include breakpoint(sm){
+        width: 90%;
+    }
+    @include breakpoint(md){
+        width: 80%;
+    }
+    @include breakpoint(lg){
+        width: 100%;
+    }
+    @include breakpoint(xl){
+        width: 100%;
+    }
+    @include breakpoint(xxl){
+        width: 100%;
+    }
+
+}

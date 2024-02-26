@@ -1,13 +1,13 @@
 @import "./theme/theme.scss";
 
-.navbar{
+.container{
+    // background-color: $secondary-color;
     display: flex;
     height: 4rem;
     color: $text-white;
-    // background-color: $secondary-color;
     justify-content: space-between;
     align-items: center;
-    .hero-logo{
+    .logo{
         font-size: $heading-size;
         font-weight: bold;
     }

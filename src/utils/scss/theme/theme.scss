@@ -1,6 +1,7 @@
 //layout colors
-$primary-color: #161616;
-$secondary-color: #2f2f2f;
+$primary-color: #0d0a22;
+$secondary-color: #0b1696;
+$secondary-soft-color: #161c5982;
 $white-color:  #ffff;
 $white-shade: #f2f2f2e0;
 $black-color: #000;
@@ -28,3 +29,25 @@ $breakpoints:(
     "xl":"(min-width:1200px)and(max-width:1399.98px)",
     "xxl":"min-width:1400px"    
 );
+
+//functions and mixins
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name );
+}
+
+@mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin breakpoint($user-value){
+    $query: map-get($breakpoints, $user-value );
+    @if $query{
+        @media (#{$query}) {
+            @content;
+        }
+    } @else{
+        @error "Oops! seems like the breakpoint #[$user-value] isn't defined yet";
+    }
+}

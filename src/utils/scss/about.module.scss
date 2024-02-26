@@ -1,0 +1,45 @@
+@import "./theme/theme.scss";
+
+.container{
+    display: flex;
+    // padding: 2% 0;
+
+    gap: 100px;
+    .textContainer{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .title{
+            font-size: 54px; 
+        }
+        .subtitle{
+            color: $secondary-color;
+        }
+        .description{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .boxes{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // gap: 20px;
+            .box{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h1 {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+    .imageContainer{
+        flex: 1;
+        position: relative;
+        .image{
+            object-fit: contain;
+        }
+    }
+}

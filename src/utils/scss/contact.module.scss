@@ -1,0 +1,55 @@
+@import "./theme/theme.scss";
+
+.container{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    .imageContainer{
+        position: relative;
+        height: 500px;
+        flex: 1;
+        .image{
+            object-fit: contain;
+        }
+    }
+    .formContainer{
+        flex: 1;
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            input{
+                color: white;
+                padding: 20px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                background-color: $secondary-soft-color;
+                &::placeholder{
+                    color: $white-shade;
+                }
+            }
+            textarea{
+                padding: 20px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                background-color: $secondary-soft-color;
+                &::placeholder{
+                    font-family:Arial, Helvetica, sans-serif;
+                    color: $white-shade;
+                }
+            }
+            button{
+                padding: 20px;
+                font-weight: bold;
+                cursor: pointer;
+                border: none;
+                border-radius: $border-radius;
+                font-size: 16px;
+                color: $text-white;
+                background-color: $secondary-color;
+            }
+        }
+    }
+}

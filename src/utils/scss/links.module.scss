@@ -1,0 +1,51 @@
+@import "./theme/theme.scss";
+
+@mixin breakpoint($user-value){
+    $query: map-get($breakpoints, $user-value );
+    @if $query{
+        @media (#{$query}) {
+            @content;
+        }
+    } @else{
+        @error "Oops! seems like the breakpoint #[$user-value] isn't defined yet";
+    }
+}
+.menuBtn{
+    display: none;
+    @include breakpoint(xs){
+        display: flex;
+    }
+}
+.links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    .logoutBtn {
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: $border-radius;
+        font-weight: 500;
+        border: none;
+    }
+    @include breakpoint(xs){
+        display: none;
+    }
+}
+
+.mobileLinks {
+  display: none;
+    @include breakpoint(xs){
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 70%;
+        height:calc(100vh - 50px);
+        background-color: $secondary-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}

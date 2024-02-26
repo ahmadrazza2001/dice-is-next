@@ -1,12 +1,14 @@
 import React from "react";
-import "../../utils/scss/navbar.module.scss";
-// import Link from "next/link";
 import Links from "./links/Links";
+import styles from "../../utils/scss/navbar.module.scss";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
-      <div className="hero-logo">{/* <img src={} /> */}DICE-NEXT</div>
+    <div className={styles.container}>
+      <Link href="/" className={styles.logo}>
+        Dice
+      </Link>
       <div className="nav-options">
         <Links />
       </div>

@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  gap: 100px;
+}
+.container .textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.container .textContainer .title {
+  font-size: 80px;
+}
+.container .textContainer .description {
+  font-size: 20px;
+}
+.container .textContainer .buttons {
+  display: flex;
+  gap: 20px;
+}
+.container .textContainer .buttons .button {
+  padding: 15px 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  min-width: 120px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}
+.container .textContainer .buttons .button:first-child {
+  padding: 15px 20px;
+  border-radius: 10px;
+  min-width: 120px;
+  cursor: pointer;
+  border: none;
+  background-color: #070f62;
+  color: white;
+}
+.container .textContainer .brands {
+  width: 500px;
+  height: 50px;
+  position: relative;
+  filter: grayscale(1);
+}
+.container .imageContainer {
+  flex: 1;
+  position: relative;
+}/*# sourceMappingURL=home.module.css.map */
