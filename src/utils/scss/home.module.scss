@@ -1,8 +1,26 @@
 @import "./theme/theme.scss";
 
+@mixin breakpoint($user-value){
+    $query: map-get($breakpoints, $user-value );
+    @if $query{
+        @media (#{$query}) {
+            @content;
+        }
+    } @else{
+        @error "Oops! seems like the breakpoint #[$user-value] isn't defined yet";
+    }
+}
+
  .container{
     display: flex;
     gap:100px;
+    @include breakpoint(xs){
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
     .textContainer{
         flex: 1;
         display: flex;
@@ -10,10 +28,21 @@
         gap: 50px;
         .title{
             font-size: 80px;
+            @include breakpoint(xs){
+                font-size: 60px;
+                text-align: center;
+            }
 
         }
         .description{
             font-size: 20px;
+            @include breakpoint(xs){
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                // text-align: center;
+            }
         }
         .buttons{
             display: flex;
@@ -36,16 +65,35 @@
                 background-color: $secondary-color;
                 color: $text-white;
             }
+            @include breakpoint(xs){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
         .brands{
             width: 500px; 
             height: 50px;
             position: relative;
             filter: grayscale(1);
+            @include breakpoint(xs){
+                
+                display: none;
+                
+            }
+        }
+        @include breakpoint(xs){
+            max-width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
     .imageContainer{
         flex: 1;
         position: relative;
+        @include breakpoint(xs){
+            display: none;
+        }
     }
  }

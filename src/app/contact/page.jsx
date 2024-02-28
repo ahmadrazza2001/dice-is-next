@@ -1,4 +1,4 @@
-"use modules";
+// "use modules";
 import Image from "next/image";
 import styles from "../../utils/scss/contact.module.scss";
 

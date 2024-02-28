@@ -1,7 +1,10 @@
 "use client";
 
-import { register } from "@/lib/action";
-import styles from "./registerForm.module.css";
+// import { register } from "@/lib/action";
+import { register } from "../../lib/action";
+// import styles from "./registerForm.module.css";
+import styles from "../../utils/scss/registerForm.module.scss";
+
 import { useFormState } from "react-dom";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";

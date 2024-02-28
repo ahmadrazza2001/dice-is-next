@@ -10,7 +10,7 @@
         @error "Oops! seems like the breakpoint #[$user-value] isn't defined yet";
     }
 }
-.menuBtn{
+.menuButton{
     display: none;
     @include breakpoint(xs){
         display: flex;
@@ -21,7 +21,7 @@
     align-items: center;
     gap: 0.5rem;
     color: white;
-    .logoutBtn {
+    .logout {
         padding: 0.5rem 1rem;
         cursor: pointer;
         border-radius: $border-radius;

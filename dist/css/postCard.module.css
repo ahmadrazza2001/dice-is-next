@@ -27,4 +27,8 @@
 }
 .container .bottom .description {
   margin-bottom: 20px;
+  color: #d8d8d8;
+}
+.container .bottom .link {
+  text-decoration: underline;
 }/*# sourceMappingURL=postCard.module.css.map */
